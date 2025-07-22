@@ -25,7 +25,7 @@ az storage container show-permission --name akkc1 --account-name storageb17g2akk
 ``` 
 az storage account keys list --account-name storageb17g2akkc11 --resource-group B17_G2_AKKC --output table
 set AZURE_STORAGE_ACCOUNT =storageb17g2akkc11
-set AZURE_STORAGE_ACCESS_KEY="yourkey"
+#set AZURE_STORAGE_ACCESS_KEY="yourkey"
 az storage account show-connection-string --name storageb17g2akkc11 --resource-group centralindia --output table 
 ```
 ### Blob Upload --
@@ -67,7 +67,7 @@ az storage container create --account-name storageb17g2akkc --name akkc --auth-m
 az storage container set-permission --name akkc --account-name storageb17g2akkc11 --public-access container
 az storage account keys list --account-name storageb17g2akkc11 --resource-group B17_G2_AKKC --output table
 set AZURE_STORAGE_ACCOUNT =storageb17g2akkc11
-set AZURE_STORAGE_ACCESS_KEY="yourkey"
+#set AZURE_STORAGE_ACCESS_KEY="yourkey"
 az storage account show-connection-string --name storageb17g2akkc11 --resource-group centralindia --output table 
 az storage blob upload --account-name storageb17g2akkc11 --container-name akkc --name rdj.jpg --file "E:/wall/rdj.jpg"
 az storage blob list --account-name storageb17g2akkc11 --container-name akkc -o table
